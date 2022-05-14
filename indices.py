@@ -14,10 +14,7 @@ for i in range(0,3,1):
 
 	ni=Ai[i]*((w_length**2)/((w_length**2)-(w_length_i[i]**2)))+ni
 
-nsi=np.sqrt(1+ni) 
-
-print(nsi)
-
-nge=nsi+1.4145*(10**(-3))
+nge=np.sqrt(1+ni) 
 
 print(nge)
+
