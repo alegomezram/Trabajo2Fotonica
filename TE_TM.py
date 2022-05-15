@@ -25,4 +25,3 @@ def tm_te(beta):
     tm_te_equation = tm_te_01(beta) - tm_te_02(beta)
     return tm_te_equation
 
-
