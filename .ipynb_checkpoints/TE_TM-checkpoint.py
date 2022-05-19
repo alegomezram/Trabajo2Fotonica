@@ -2,6 +2,7 @@ import numpy as np
 import scipy.special as sp
 from core_refractive_index import *
 from q1yq2 import *
+from TE_TM import *
 
 
 #fraccion de funciones de Bessel de primer tipo
