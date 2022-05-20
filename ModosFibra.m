@@ -40,5 +40,3 @@ max=80;
 [p0, err, k, y] = newton(f, df, p0, delta, epsilon, max) 
 '---'
 [c, err, yc] = bisect (f, n2*k0, n1*k0, delta)
-
-
