@@ -20,8 +20,8 @@ n2=1.450417399464332;   %cladding (sílice)
 % f=q1.*(j2./j1)-q2.*(k2./k1);
 
 % Plot
-R=@(beta) (sqrt((n1^2)*(k0^2)-(beta.^2))).*((besselj(1,(sqrt((n1^2)*(k0^2)-(beta.^2)))*a))./(besselj(2,(sqrt((n1^2)*(k0^2)-(beta.^2)))*a)));
-S=@(beta) -(sqrt((beta.^2)-(n2^2)*(k0^2))).*((besselk(1,(sqrt((beta.^2)-(n2^2)*(k0^2)))*a))./(besselk(2,(sqrt((beta.^2)-(n2^2)*(k0^2)))*a)));
+R=@(beta) (sqrt((n1^2)*(k0^2)-(beta.^2))).*((besselj(0,(sqrt((n1^2)*(k0^2)-(beta.^2)))*a))./(besselj(1,(sqrt((n1^2)*(k0^2)-(beta.^2)))*a)));
+S=@(beta) -(sqrt((beta.^2)-(n2^2)*(k0^2))).*((besselk(0,(sqrt((beta.^2)-(n2^2)*(k0^2)))*a))./(besselk(1,(sqrt((beta.^2)-(n2^2)*(k0^2)))*a)));
 beta=linspace(n2*k0,n1*k0,1000);
 figure('Name','Modos TE'), plot(beta,R(beta),beta,S(beta),'LineWidth',1.5), grid on
 legend('R','S','Location','best')
